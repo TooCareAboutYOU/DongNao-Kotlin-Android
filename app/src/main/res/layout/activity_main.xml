@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".`MainActivity.kt`">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acBtn_Click"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="点击事件"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acBtn_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Anko布局+RecyclerView"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acBtn_Db"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="数据库"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
