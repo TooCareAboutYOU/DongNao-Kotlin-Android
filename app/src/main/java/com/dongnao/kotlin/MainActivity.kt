@@ -1,21 +1,15 @@
 package com.dongnao.kotlin
 
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.AutoCompleteTextView
-import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.Unbinder
-import com.dongnao.kotlin.h.initView
-import com.dongnao.kotlin.h.with
-import kotlinx.android.synthetic.main.activity_main.*
+import com.dongnao.java.Java2KotlinActivity
 import kotlinx.coroutines.*
 import org.jetbrains.anko.*
-import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -30,17 +24,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         R.id.acBtn_Db -> {
             startActivity(intentFor<DataBaseActivity>())
         }
+        R.id.acBtn_Java2Kotlin->{
+            startActivity(intentFor<Java2KotlinActivity>())
+        }
+        R.id.acBtn_Kotlin2Java->{
+            startActivity(intentFor<Kotlin2JavaActivity>())
+        }
         else -> {
 
         }
     }
 
-    @BindView(R.id.acBtn_Click)
-    lateinit var acBtnClick: AppCompatButton
-    @BindView(R.id.acBtn_Layout)
-    lateinit var acBtnLayout: AppCompatButton
-    @BindView(R.id.acBtn_Db)
-    lateinit var acBtnDb: AppCompatButton
+    @BindView(R.id.acBtn_Click) lateinit var acBtnClick: AppCompatButton
+    @BindView(R.id.acBtn_Layout) lateinit var acBtnLayout: AppCompatButton
+    @BindView(R.id.acBtn_Db) lateinit var acBtnDb: AppCompatButton
+    @BindView(R.id.acBtn_Java2Kotlin) lateinit var acBtJava2Kotlin: AppCompatButton
+    @BindView(R.id.acBtn_Kotlin2Java) lateinit var acBtKotlin2Java: AppCompatButton
 
     var unbinder: Unbinder? = null
 
@@ -57,6 +56,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         acBtnLayout.setOnClickListener(this)
         acBtnDb.setOnClickListener(this)
+        acBtJava2Kotlin.setOnClickListener(this)
+        acBtKotlin2Java.setOnClickListener(this)
     }
 
 

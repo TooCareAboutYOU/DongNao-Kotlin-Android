@@ -17,22 +17,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.dongnao.java.JavaActivity">
+        <activity android:name=".Kotlin2JavaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.dongnao.java.Java2KotlinActivity">
+        </activity>
         <activity android:name=".DataBaseActivity" />
         <activity android:name=".AnkoLayoutActivity" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".MainActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
