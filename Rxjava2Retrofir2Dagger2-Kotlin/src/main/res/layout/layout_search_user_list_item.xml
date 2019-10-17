@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/acImgUserLogo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@color/cardview_dark_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acTvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@id/acImgUserLogo"
+            app:layout_constraintTop_toTopOf="@id/acImgUserLogo"
+            tools:text="NULL" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acTvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/acTvUserName"
+            app:layout_constraintLeft_toRightOf="@id/acTvUserName"
+            tools:text="100.00" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acTvUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@id/acImgUserLogo"
+            app:layout_constraintLeft_toRightOf="@id/acImgUserLogo"
+            tools:text="NULL" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/acTvGoGitHubHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_jump_next"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/acImgUserLogo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/acImgUserLogo"
+            tools:text="Go github" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

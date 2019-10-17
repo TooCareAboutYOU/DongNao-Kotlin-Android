@@ -1,0 +1,19 @@
+package com.dongnao.kotlin.rrd.dagger2.components
+
+import com.dongnao.kotlin.rrd.dagger2.modules.ActivityModule
+import com.dongnao.kotlin.rrd.dagger2.scopes.ActivityScope
+import com.dongnao.kotlin.rrd.ui.SearchUserActivity
+import dagger.Component
+
+/**
+ * @author zhangshuai
+ * @date 2019-10-17 18:33
+ */
+
+@ActivityScope
+@Component(modules = arrayOf(ActivityModule::class), dependencies = arrayOf(AppComponent::class))
+interface ActivityComponent {
+
+    fun inject(searchUserActivity: SearchUserActivity)
+
+}

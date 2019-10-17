@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':Rxjava2Retrofir2Dagger2-Kotlin'
 rootProject.name='DongNao-Kotlin-Android'
