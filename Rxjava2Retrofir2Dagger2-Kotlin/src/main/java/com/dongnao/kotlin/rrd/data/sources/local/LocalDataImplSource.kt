@@ -9,8 +9,8 @@ import io.reactivex.Flowable
  * @author zhangshuai
  * @date 2019-10-17 16:04
  */
-class LocalDataImplSource : DataImpl.SearchUserPresenter {
-    override fun getUserList(q: String): Flowable<BaseBean<List<ItemSearchUserListBean>>> {
-        return Flowable.just(BaseBean<List<ItemSearchUserListBean>>())
+class LocalDataImplSource : DataImpl.SearchUserListPresenter {
+    override fun getUserList(q: String): Flowable<BaseBean<ArrayList<ItemSearchUserListBean>>> {
+        return Flowable.just(BaseBean<ArrayList<ItemSearchUserListBean>>())
     }
 }

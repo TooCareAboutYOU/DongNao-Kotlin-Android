@@ -15,6 +15,5 @@ import retrofit2.http.Query
 interface GithubService {
 
     @GET("search/users")
-    fun getUserList(@Query("q") q: String): Flowable<BaseBean<List<ItemSearchUserListBean>>>
-
+    fun getUserList(@Query("q") q: String): Flowable<BaseBean<ArrayList<ItemSearchUserListBean>>>
 }

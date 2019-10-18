@@ -9,8 +9,6 @@ import com.dongnao.kotlin.rrd.data.sources.local.LocalDataImplSource
 import com.dongnao.kotlin.rrd.data.sources.remote.RemoteDataImplSource
 import dagger.Module
 import dagger.Provides
-import javax.inject.Named
-import javax.inject.Qualifier
 import javax.inject.Singleton
 
 /**
@@ -24,23 +22,22 @@ class AppModule {
     @Singleton
     @Remote
     @Provides
-    fun provideRemotePresenter(githubService: GithubService): DataImpl.SearchUserPresenter {
+    fun provideRemotePresenter(githubService: GithubService): DataImpl.SearchUserListPresenter {
         return RemoteDataImplSource(githubService)
     }
 
     @Singleton
     @Local
     @Provides
-    fun provideLocalPresenter(): DataImpl.SearchUserPresenter {
+    fun provideLocalPresenter(): DataImpl.SearchUserListPresenter {
         return LocalDataImplSource()
     }
-
 
     @Singleton
     @Provides
     fun provideDataManager(
-        @Remote remote: DataImpl.SearchUserPresenter,
-        @Local local: DataImpl.SearchUserPresenter
+        @Remote remote: DataImpl.SearchUserListPresenter,
+        @Local local: DataImpl.SearchUserListPresenter
     ): DataManager {
         return DataManager(remote, local)
     }

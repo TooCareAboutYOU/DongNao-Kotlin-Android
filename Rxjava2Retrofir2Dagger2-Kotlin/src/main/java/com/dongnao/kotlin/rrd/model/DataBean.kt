@@ -1,12 +1,14 @@
 package com.dongnao.kotlin.rrd.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 /**
  *retrofit
  */
 const val baseUrl: String = "https://api.github.com/"
+
 /**
  * json解析基类
  */
@@ -18,6 +20,7 @@ data class BaseBean<T>(
     @SerializedName("items")
     val items: T? = null
 )
+
 /**
  * --------------------------- 用户列表 ----------------------------------
  */
@@ -36,4 +39,9 @@ data class ItemSearchUserListBean(
     val received_events_url: String? = "",
     val type: String? = "",
     val score: Double? = 0.0
-)
+
+) {
+    override fun toString(): String {
+        return "ItemSearchUserListBean(login=$login, id=$id, node_id=$node_id, avatar_url=$avatar_url, gravatar_id=$gravatar_id, url=$url, html_url=$html_url, followers_url=$followers_url, subscriptions_url=$subscriptions_url, organizations_url=$organizations_url, repos_url=$repos_url, received_events_url=$received_events_url, type=$type, score=$score)"
+    }
+}

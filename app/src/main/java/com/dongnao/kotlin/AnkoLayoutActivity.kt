@@ -90,8 +90,7 @@ class AnkoLayoutActivity : AppCompatActivity() {
 
 }
 
-class MyAdapter(val ctx: Context, val list: ArrayList<DataBean.TrailersBean>) :
-    RecyclerView.Adapter<MyAdapter.ItemViewHolder>() {
+class MyAdapter(val ctx: Context, val list: ArrayList<DataBean.TrailersBean>) : RecyclerView.Adapter<MyAdapter.ItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val holder = ItemViewHolder(ItemViewUI().createView(AnkoContext.createReusable(ctx, this)))

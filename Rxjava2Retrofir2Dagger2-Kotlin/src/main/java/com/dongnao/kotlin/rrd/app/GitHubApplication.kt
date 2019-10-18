@@ -9,7 +9,6 @@ import com.dongnao.kotlin.rrd.dagger2.modules.AppModule
  * @author zhangshuai
  * @date 2019-10-17 16:42
  */
-
 class GitHubApplication : Application() {
 
     companion object {
@@ -26,6 +25,7 @@ class GitHubApplication : Application() {
         instance = this
 
         appComponent = DaggerAppComponent.builder().appModule(AppModule()).build()
+
     }
 
     fun getAppComponent(): AppComponent = appComponent

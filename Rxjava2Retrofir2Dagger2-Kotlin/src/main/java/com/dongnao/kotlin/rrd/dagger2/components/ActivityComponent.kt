@@ -2,7 +2,7 @@ package com.dongnao.kotlin.rrd.dagger2.components
 
 import com.dongnao.kotlin.rrd.dagger2.modules.ActivityModule
 import com.dongnao.kotlin.rrd.dagger2.scopes.ActivityScope
-import com.dongnao.kotlin.rrd.ui.SearchUserActivity
+import com.dongnao.kotlin.rrd.ui.searchuser.SearchUserActivity
 import dagger.Component
 
 /**

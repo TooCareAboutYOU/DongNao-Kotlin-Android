@@ -2,7 +2,6 @@ package com.dongnao.kotlin.rrd.dagger2.components
 
 import com.dongnao.kotlin.rrd.dagger2.modules.AppModule
 import com.dongnao.kotlin.rrd.data.DataManager
-import com.dongnao.kotlin.rrd.ui.SearchUserActivity
 import dagger.Component
 import javax.inject.Singleton
 
