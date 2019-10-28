@@ -7,8 +7,8 @@ import androidx.appcompat.widget.AppCompatButton
 import com.dongnao.kotlin.rrd.R
 import com.dongnao.kotlin.rrd.RxSchedulerHelper
 import com.dongnao.kotlin.rrd.base.BaseActivity
-import com.dongnao.kotlin.rrd.data.retrofit2.GithubService
-import com.dongnao.kotlin.rrd.model.baseUrl
+import com.dongnao.kotlin.rrd.api.GithubService
+import com.dongnao.kotlin.rrd.api.baseUrl
 import com.dongnao.kotlin.rrd.ui.searchuser.SearchUserActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.Cache
@@ -75,7 +75,7 @@ class MainActivity : BaseActivity() {
 
         val githubService = retrofit.create(GithubService::class.java)
 
-        githubService.getUserList("tom")
+        githubService.getSearchUserList("tom")
             .compose(RxSchedulerHelper())
             .subscribe({
                 println("输出数据--->>> ${it.toString()}")

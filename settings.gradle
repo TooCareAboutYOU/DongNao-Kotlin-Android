@@ -1,2 +1,2 @@
-include ':app', ':Rxjava2Retrofir2Dagger2-Kotlin'
+include ':app', ':Rxjava2Retrofir2Dagger2-Kotlin', ':Lib-Base', ':app_kotlin'
 rootProject.name='DongNao-Kotlin-Android'

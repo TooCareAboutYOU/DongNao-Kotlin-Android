@@ -35,7 +35,9 @@ fun <T> add(t: T) where T : OnClick, T : OnLongClick {
 
 }
 
-class Impl:OnClick,OnLongClick
+class Impl:OnClick,OnLongClick{
+
+}
 
 fun main(args: Array<String>) {
 

@@ -3,10 +3,11 @@ package com.dongnao.kotlin.rrd.dagger2.modules
 import com.dongnao.kotlin.rrd.dagger2.scopes.Local
 import com.dongnao.kotlin.rrd.dagger2.scopes.Remote
 import com.dongnao.kotlin.rrd.data.DataManager
-import com.dongnao.kotlin.rrd.data.retrofit2.GithubService
-import com.dongnao.kotlin.rrd.data.sources.DataImpl
-import com.dongnao.kotlin.rrd.data.sources.local.LocalDataImplSource
-import com.dongnao.kotlin.rrd.data.sources.remote.RemoteDataImplSource
+import com.dongnao.kotlin.rrd.api.GithubService
+import com.dongnao.kotlin.rrd.dagger2.scopes.ActivityScope
+import com.dongnao.kotlin.rrd.data.impl.GitHubPresenter
+import com.dongnao.kotlin.rrd.data.impl.local.LocalDataImplSource
+import com.dongnao.kotlin.rrd.data.impl.remote.RemoteDataImplSource
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -22,22 +23,20 @@ class AppModule {
     @Singleton
     @Remote
     @Provides
-    fun provideRemotePresenter(githubService: GithubService): DataImpl.SearchUserListPresenter {
+    fun provideRemotePresenter(githubService: GithubService): GitHubPresenter {
         return RemoteDataImplSource(githubService)
     }
 
     @Singleton
     @Local
     @Provides
-    fun provideLocalPresenter(): DataImpl.SearchUserListPresenter {
+    fun provideLocalPresenter(): GitHubPresenter {
         return LocalDataImplSource()
     }
 
     @Singleton
     @Provides
-    fun provideDataManager(
-        @Remote remote: DataImpl.SearchUserListPresenter,
-        @Local local: DataImpl.SearchUserListPresenter
+    fun provideDataManager(@Remote remote: GitHubPresenter, @Local local: GitHubPresenter
     ): DataManager {
         return DataManager(remote, local)
     }

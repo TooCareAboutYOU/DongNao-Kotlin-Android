@@ -1,23 +1,27 @@
 package com.dongnao.kotlin.rrd.data
 
-import com.dongnao.kotlin.rrd.data.sources.DataImpl
-import com.dongnao.kotlin.rrd.model.BaseBean
+import com.dongnao.kotlin.rrd.data.impl.GitHubPresenter
 import com.dongnao.kotlin.rrd.model.ItemSearchUserListBean
 import io.reactivex.Flowable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 
 class DataManager @Inject constructor(
-    val remote: DataImpl.SearchUserListPresenter,
-    val local: DataImpl.SearchUserListPresenter
+    val remote: GitHubPresenter,
+    val local: GitHubPresenter
 ) {
 
-    fun getUserData(q: String): Flowable<ArrayList<ItemSearchUserListBean>> {
-        return remote.getUserList(q)
-            .onExceptionResumeNext(local.getUserList(q))
+    fun getSearchUserList(q: String): Flowable<ArrayList<ItemSearchUserListBean>> {
+        return remote.getSearchUserList(q)
+            .onExceptionResumeNext(local.getSearchUserList(q))
             .map { it.items }
     }
+
+    fun getSearchUserDetail(username: String): Flowable<ItemSearchUserListBean> {
+        return remote.getSearchUserDetail(username)
+            .onExceptionResumeNext(local.getSearchUserDetail(username))
+            .map { it.items }
+    }
+
 
 }

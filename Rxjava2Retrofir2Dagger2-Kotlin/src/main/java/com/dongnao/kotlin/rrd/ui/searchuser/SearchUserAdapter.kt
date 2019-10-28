@@ -9,8 +9,10 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dongnao.kotlin.rrd.R
+import com.dongnao.kotlin.rrd.USER_NAME
 import com.dongnao.kotlin.rrd.model.ItemSearchUserListBean
 import org.jetbrains.anko.find
+import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.toast
 
@@ -39,7 +41,7 @@ class SearchUserAdapter(val context: Context) : RecyclerView.Adapter<SearchUserA
         holder.tvScore.text = list[position].score.toString()
         holder.tvUserId.text = list[position].node_id
         holder.tvGoGithub.onClick {
-            context.toast("点击了 ${list[position].toString()}")
+            context.startActivity(context.intentFor<SearchUserActivity>(USER_NAME to list[position].login))
         }
     }
 

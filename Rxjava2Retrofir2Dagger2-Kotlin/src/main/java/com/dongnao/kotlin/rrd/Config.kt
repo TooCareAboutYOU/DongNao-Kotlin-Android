@@ -11,3 +11,5 @@ fun <T> RxSchedulerHelper(): FlowableTransformer<T, T> {
             .observeOn(AndroidSchedulers.mainThread()).unsubscribeOn(Schedulers.io())
     }
 }
+
+const val USER_NAME:String ="username"

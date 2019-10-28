@@ -1,7 +1,5 @@
 package com.dongnao.kotlin.rrd.ui.searchuser
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dongnao.kotlin.rrd.R
@@ -9,21 +7,17 @@ import com.dongnao.kotlin.rrd.base.BaseActivity
 import com.dongnao.kotlin.rrd.dagger2.components.AppComponent
 import com.dongnao.kotlin.rrd.dagger2.components.DaggerActivityComponent
 import com.dongnao.kotlin.rrd.dagger2.modules.ActivityModule
-import com.dongnao.kotlin.rrd.data.sources.DataImpl
+import com.dongnao.kotlin.rrd.data.impl.GitHubPresenter
 import com.dongnao.kotlin.rrd.model.ItemSearchUserListBean
 import com.dongnao.kotlin.rrd.presenters.SearchUserPresenter
-import io.reactivex.Flowable
-import io.reactivex.plugins.RxJavaPlugins
 import kotlinx.android.synthetic.main.activity_search_user.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import javax.inject.Inject
 
-class SearchUserActivity : BaseActivity(), DataImpl.SearchUserListPresenter.UserListView {
+class SearchUserActivity : BaseActivity(), GitHubPresenter.SearchUserListView {
 
     @Inject
     lateinit var presenter: SearchUserPresenter
-
-    val list = ArrayList<ItemSearchUserListBean>()
 
     val adapter: SearchUserAdapter = SearchUserAdapter(this)
 
@@ -49,7 +43,7 @@ class SearchUserActivity : BaseActivity(), DataImpl.SearchUserListPresenter.User
         }
     }
 
-    override fun getUserListSuc(data: ArrayList<ItemSearchUserListBean>) {
+    override fun getSearchUserListSuc(data: ArrayList<ItemSearchUserListBean>) {
         adapter.update(data)
     }
 }

@@ -3,6 +3,7 @@ package com.dongnao.kotlin.rrd.dagger2.components
 import com.dongnao.kotlin.rrd.dagger2.modules.ActivityModule
 import com.dongnao.kotlin.rrd.dagger2.scopes.ActivityScope
 import com.dongnao.kotlin.rrd.ui.searchuser.SearchUserActivity
+import com.dongnao.kotlin.rrd.ui.searchuserdetail.SearchUserDetailActivity
 import dagger.Component
 
 /**
@@ -15,5 +16,7 @@ import dagger.Component
 interface ActivityComponent {
 
     fun inject(searchUserActivity: SearchUserActivity)
+
+    fun inject(searchUserDetailActivity: SearchUserDetailActivity)
 
 }
