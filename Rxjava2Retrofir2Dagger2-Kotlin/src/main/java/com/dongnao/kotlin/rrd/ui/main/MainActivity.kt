@@ -1,5 +1,6 @@
 package com.dongnao.kotlin.rrd.ui.main
 
+import a.a.a.c.b.t
 import android.annotation.SuppressLint
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -53,9 +54,9 @@ class MainActivity : BaseActivity() {
     @SuppressLint("CheckResult")
     private fun loadRetrofitRxJava2() {
         val builder = OkHttpClient.Builder()
-        val mHttpLoggingInterceptor = HttpLoggingInterceptor { message ->
-            //            print(message)
-        }
+        val mHttpLoggingInterceptor = HttpLoggingInterceptor(
+
+        )
         mHttpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         builder.addInterceptor(mHttpLoggingInterceptor)
 

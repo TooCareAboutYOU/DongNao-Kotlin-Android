@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/Lib-Base/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/androidTest/java/com/dongnao/kotlin/ExampleInstrumentedTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/cpp/native-lib.cpp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/java/Java2KotlinActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/kotlin/Kotlin2JavaActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/kotlin/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/kotlin/a/AUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/kotlin/a/BUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dongnao/kotlin/h/string.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/java/com/dongnao/kotlin/ExampleUnitTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/Baselibrary/src/main/java-gen/io/dushu/dao/DaoMaster.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/Baselibrary/src/main/java/io/dushu/baselibrary/appconfig/OtherPopStatusConfigManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/SensorsData/src/main/java/io/dushu/sensors/SensorDataWrapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/UMLibrary/res/values/attrs.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/UMLibrary/src/com/umeng/message/lib/util/ShareClientUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/UMLibrary/src/com/umeng/message/lib/widget/HorizontalSharePanelView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/UMLibrary/src/com/umeng/message/lib/widget/SharePanelPopupWindow.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/UMLibrary/src/com/umeng/message/lib/widget/SharePanelView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/build/generated/data_binding_base_class_source_out/debug/dataBindingGenBaseClassesDebug/out/io/dushu/fandengreader/databinding/FragmentFdPosterCodeBinding.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/build/intermediates/packaged_res/debug/layout/item_book_detail_link_share.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/activity/SignInActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/activity/WebDetailActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/api/AppJavaApi.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/book/rankinglist/RankingListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/club/invitingfriends/PopularizeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/club/invitingfriends/PopularizePresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/contentactivty/poster/FDPosterCodeFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/contentactivty/poster/PosterCodeFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/fragment/BottomShareDialogFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/fragment/PopularizePosterShareFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/module/book/ui/fragment/BookDetailLinkShareDialogFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/module/book/ui/fragment/BookDetailTitleCompFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/module/find/ui/fragment/FindDetailTitleCompFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/vip/main/TalkBookFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/vip/main/VipActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/welcome/TrackingIoInfoPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/java/io/dushu/fandengreader/welcome/WelcomeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/res/layout/fragment_fd_poster_code.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/res/layout/fragment_popularize_poster_share.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/app/src/main/res/layout/item_book_detail_link_share.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/config.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/BaseLibConstant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/api/ApiBase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/base/activity/SkeletonUMBaseActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/base/di/module/AppModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/base/fragment/SkeletonBaseFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/presenter/CommonPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/java/io/dushu/lib/basic/util/AppCommonUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/lib_base/src/main/res/values/attrs.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/module_app/src/main/java/io/dushu/app/main/MainApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/huangdou/dushu_main_v02/module_app/src/main/java/io/dushu/app/main/service/AppSdkInitService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

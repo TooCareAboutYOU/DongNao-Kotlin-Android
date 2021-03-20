@@ -17,7 +17,7 @@ import javax.inject.Singleton
  * @date 2019-10-17 16:56
  */
 
-@Module(includes = arrayOf(RetrofitModule::class))
+@Module()
 class AppModule {
 
     @Singleton

@@ -1,15 +1,19 @@
 package com.dongnao.kotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.Unbinder
 import com.dongnao.java.Java2KotlinActivity
-import kotlinx.coroutines.*
-import org.jetbrains.anko.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -35,6 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+
     @BindView(R.id.acBtn_Click) lateinit var acBtnClick: AppCompatButton
     @BindView(R.id.acBtn_Layout) lateinit var acBtnLayout: AppCompatButton
     @BindView(R.id.acBtn_Db) lateinit var acBtnDb: AppCompatButton
@@ -48,7 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         unbinder = ButterKnife.bind(this)
 //        init()
-        acBtnClick.text = stringFromJNI()
+//        acBtnClick.text = stringFromJNI()
         //方式一
         acBtnClick.setOnClickListener(this)
         //方式二
@@ -62,7 +67,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun init() {
-        acBtnClick.text = stringFromJNI()
+//        acBtnClick.text = stringFromJNI()
         //生命周期是整个应用程序的生命周期
         var job = GlobalScope.launch {
             delay(3000L)
@@ -82,7 +87,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    external fun stringFromJNI(): String
+//    external fun stringFromJNI(): String
 
     companion object {
         init {
@@ -94,5 +99,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onDestroy()
         unbinder!!.unbind()
     }
+
+
 }
 

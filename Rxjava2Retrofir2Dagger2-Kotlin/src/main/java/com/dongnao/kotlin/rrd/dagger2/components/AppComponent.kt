@@ -1,6 +1,7 @@
 package com.dongnao.kotlin.rrd.dagger2.components
 
 import com.dongnao.kotlin.rrd.dagger2.modules.AppModule
+import com.dongnao.kotlin.rrd.dagger2.modules.RetrofitModule
 import com.dongnao.kotlin.rrd.data.DataManager
 import dagger.Component
 import javax.inject.Singleton
@@ -11,7 +12,7 @@ import javax.inject.Singleton
  */
 
 @Singleton
-@Component(modules = arrayOf(AppModule::class))
+@Component(modules = [AppModule::class, RetrofitModule::class])
 interface AppComponent {
 
     fun dataManage(): DataManager

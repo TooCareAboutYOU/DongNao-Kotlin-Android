@@ -11,11 +11,10 @@ class ContainsIn<in T> {
     }
 }
 
-//class ContainsOut<out T> {
+class ContainsOut<out T> {
 //    fun set():T {
-//
 //    }
-//}
+}
 
 //泛型方法
 fun <T> Test(t: T) {
@@ -35,9 +34,7 @@ fun <T> add(t: T) where T : OnClick, T : OnLongClick {
 
 }
 
-class Impl:OnClick,OnLongClick{
-
-}
+class Impl : OnClick, OnLongClick
 
 fun main(args: Array<String>) {
 

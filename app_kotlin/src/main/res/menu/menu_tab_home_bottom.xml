@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_recommend"
+        android:icon="@drawable/selector_tab_home_recommend"
+        android:title="推荐" />
+    <item
+        android:id="@+id/action_girl"
+        android:icon="@drawable/selector_tab_home_girl"
+        android:title="美女" />
+    <item
+        android:id="@+id/action_history"
+        android:icon="@drawable/selector_tab_home_history"
+        android:title="历史记录" />
+</menu>

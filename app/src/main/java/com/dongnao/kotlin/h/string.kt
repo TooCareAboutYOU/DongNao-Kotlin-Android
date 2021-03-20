@@ -3,7 +3,7 @@ package com.dongnao.kotlin.h
 //字符串 正则表达式 Null安全本地函数
 fun main(args: Array<String>) {
     //kotlin 扩展方法
-    val msg = "com.dongnao.kotlin.master.ktfiles";
+    val msg = "com.dongnao.kotlin.master.ktfiles"
     val (param1, param2, param3, param4, param5) = msg.split(".")
     println("param1-> $param1")
     println("param2-> $param2")
@@ -22,7 +22,6 @@ fun main(args: Array<String>) {
     println("第一个最后斜杠之后的字符串：$d")
     val e = path.subSequence(5, 30)
     println("截取：$e")
-    System.out.println("打印：$e")
 
     path.forEach { print(it + "\t") }
     println()
@@ -36,13 +35,13 @@ fun main(args: Array<String>) {
     test(regular2, path)
     println("-----------------分隔线----------------")
 
-    val str="""'$'path"""  //获取变量
-    val str2="$path"
-    println("$str\t\t$str2")
+    val str = """'$'path"""  //获取变量
+    val str2 = "$path"
+    println("str：$str\t\t str2：$str2")
 
 }
 
-inline fun test(regular: Regex, path: String) {
+fun test(regular: Regex, path: String) {
     val matchResult = regular.matchEntire(path)
     if (matchResult != null) {
         val list = matchResult.groupValues.toList()

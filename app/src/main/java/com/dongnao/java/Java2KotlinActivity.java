@@ -1,10 +1,9 @@
 package com.dongnao.java;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import com.dongnao.kotlin.R;
 import com.dongnao.kotlin.a.A;
@@ -25,7 +24,7 @@ public class Java2KotlinActivity extends AppCompatActivity {
 
         //如果多个文件使用相同的类名给Java使用，则使用注解 @file:JvmMultifileClass
         Utils.a();
-        Utils.b();
+//        Utils.b();
         Hello.myTest("1");
         Hello.myTest(1);
 
@@ -42,10 +41,10 @@ public class Java2KotlinActivity extends AppCompatActivity {
 
         try {
             Hello.myEx();
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             e.printStackTrace();
         }
 
-
     }
+
 }

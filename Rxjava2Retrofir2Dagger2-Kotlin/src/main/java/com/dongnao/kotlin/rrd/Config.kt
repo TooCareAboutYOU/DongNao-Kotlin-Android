@@ -8,7 +8,8 @@ import io.reactivex.schedulers.Schedulers
 fun <T> RxSchedulerHelper(): FlowableTransformer<T, T> {
     return FlowableTransformer {
         it.subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread()).unsubscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .unsubscribeOn(Schedulers.io())
     }
 }
 

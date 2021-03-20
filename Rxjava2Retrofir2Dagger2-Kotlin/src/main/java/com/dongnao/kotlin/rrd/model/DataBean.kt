@@ -19,6 +19,7 @@ data class BaseBean<T>(
 )
 
 /**
+ * java class转换kotlin 而成
  * --------------------------- 用户列表 ----------------------------------
 
 val login: String? = "",

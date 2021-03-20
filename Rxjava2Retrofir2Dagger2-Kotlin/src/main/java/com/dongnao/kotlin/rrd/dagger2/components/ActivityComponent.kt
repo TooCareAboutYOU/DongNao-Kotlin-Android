@@ -12,7 +12,7 @@ import dagger.Component
  */
 
 @ActivityScope
-@Component(modules = arrayOf(ActivityModule::class), dependencies = arrayOf(AppComponent::class))
+@Component(modules = [ActivityModule::class], dependencies = [AppComponent::class])
 interface ActivityComponent {
 
     fun inject(searchUserActivity: SearchUserActivity)
