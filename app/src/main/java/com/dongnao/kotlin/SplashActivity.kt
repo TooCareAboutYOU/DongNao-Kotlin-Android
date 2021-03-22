@@ -1,16 +1,10 @@
 package com.dongnao.kotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.SyncStateContract.Helpers.insert
+import androidx.appcompat.app.AppCompatActivity
 import com.dongnao.kotlin.widgets.MyView
 import kotlinx.android.synthetic.main.activity_splash.*
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.runBlocking
 import org.jetbrains.anko.*
-import org.jetbrains.anko.coroutines.experimental.bg
-import org.jetbrains.anko.custom.async
-import org.jetbrains.anko.db.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class SplashActivity : AppCompatActivity(), AnkoLogger {
@@ -18,10 +12,10 @@ class SplashActivity : AppCompatActivity(), AnkoLogger {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //xml格式布局
-//        loadXML()
+        loadXML()
 
         //DSL格式布局
-        loadDSL()
+//        loadDSL()
     }
 
 

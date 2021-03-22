@@ -4,9 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import butterknife.BindView
-import butterknife.ButterKnife
-import butterknife.Unbinder
 import com.dongnao.java.Java2KotlinActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -40,20 +37,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    @BindView(R.id.acBtn_Click) lateinit var acBtnClick: AppCompatButton
-    @BindView(R.id.acBtn_Layout) lateinit var acBtnLayout: AppCompatButton
-    @BindView(R.id.acBtn_Db) lateinit var acBtnDb: AppCompatButton
-    @BindView(R.id.acBtn_Java2Kotlin) lateinit var acBtJava2Kotlin: AppCompatButton
-    @BindView(R.id.acBtn_Kotlin2Java) lateinit var acBtKotlin2Java: AppCompatButton
+    lateinit var acBtnClick: AppCompatButton
+    lateinit var acBtnLayout: AppCompatButton
+    lateinit var acBtnDb: AppCompatButton
+    lateinit var acBtJava2Kotlin: AppCompatButton
+    lateinit var acBtKotlin2Java: AppCompatButton
 
-    var unbinder: Unbinder? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        unbinder = ButterKnife.bind(this)
+        acBtnClick = findViewById(R.id.acBtn_Click)
+        acBtnLayout = findViewById(R.id.acBtn_Layout)
+        acBtnDb = findViewById(R.id.acBtn_Db)
+        acBtJava2Kotlin = findViewById(R.id.acBtn_Java2Kotlin)
+        acBtKotlin2Java = findViewById(R.id.acBtn_Kotlin2Java)
+
+
 //        init()
-//        acBtnClick.text = stringFromJNI()
         //方式一
         acBtnClick.setOnClickListener(this)
         //方式二
@@ -94,12 +95,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             System.loadLibrary("native-lib")
         }
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        unbinder!!.unbind()
-    }
-
-
 }
 

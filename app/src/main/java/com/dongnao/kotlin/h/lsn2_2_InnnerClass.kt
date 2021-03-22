@@ -3,6 +3,10 @@ package com.dongnao.kotlin.h
 import android.os.Build
 import android.view.View
 
+
+/**
+ * 动脑视频第二节 第三段视频: lsn2_2_Kotlin基础语法3_接口、类与访问控制.vep
+ */
 /**
  * 接口、抽象类、继承
  * 嵌套类、内部类、object与伴生对象
@@ -26,10 +30,8 @@ class AlertDialog{
 
     val str="hello"
 
-    //嵌套类
-    class Builder{
-
-    }
+    //嵌套类 拿不到外部内引用的
+    class Builder
 
     //内部类
     inner class InnerClz{
@@ -40,6 +42,7 @@ class AlertDialog{
 
 }
 
+//类似于静态类
 object Dialog{
     fun show(){
         println("I from Dialog")
@@ -49,8 +52,8 @@ object Dialog{
 fun main(args: Array<String>) {
     Dialog.show()
     AlertDialog.show()
-    AlertDialog.show()
 
+    //匿名内部类
     val person=object :Person(){
         override fun test() {
 

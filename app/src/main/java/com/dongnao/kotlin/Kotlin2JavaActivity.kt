@@ -22,8 +22,8 @@ class Kotlin2JavaActivity : AppCompatActivity() {
         j()
 
         //转义
-        val i = Utils() as java.lang.Object
-        i.wait()
+//        val i = Utils() as java.lang.Object
+//        i.wait()
         Case.compare("1", "2")
     }
 
